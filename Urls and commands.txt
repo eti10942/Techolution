@@ -1,0 +1,25 @@
+
+
+insert into Account(ID,ACCOUNT_NAME,ACCOUNT_NUMBER) VALUES(1,'ETIKA','10102000');
+
+insert into Account(ID,ACCOUNT_NAME,ACCOUNT_NUMBER) VALUES(2,'PRAVEEN','31121999');
+
+ 
+
+SELECT * FROM ACCOUNT
+
+
+
+http://localhost:8080/?page=1&size=2
+
+
+
+http://localhost:8080/findAccount?accountNumber=10102000
+
+
+
+curl -X PUT -H "Content-Type: application/json" -d "{\"accountName\": \"Megha\", \"accountNumber\": \"18091999\"}" http://localhost:8080/updateAccount/111111
+
+
+
+curl -X POST -H "Content-Type: application/json" -d "{ \"accountNumber\": \"111111\", \"accountName\": \"John\"}" http://localhost:8080/createAccount
